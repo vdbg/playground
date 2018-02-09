@@ -5,18 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Test document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+p {
+    color: blue;
+    width: 200px;
+}
+li {
+    list-style: none;
+}
+a:link, a:visited {
+    text-decoration: none;
+    background-color: grey;
+    margin-bottom: 1px;
+    border: 1px blue solid;
+    width: 100px;
+    text-align: center;
+    color: red;
+    font-size: 30px;
+}
+
+a:hover, a:active {
+    color: yellow;
+    background-color: red;
+}
+
+header li:nth-child(3) {
+    font-size: 40px;
+}
+
+article:nth-child(3) {
+    background-color: red;
+    color: green;
+}
+
+section div:nth-child(odd) {
+    background-color: gray;
+}
+
+section div:nth-child(4):hover {
+    background-color: green;
+    cursor: pointer;
+}
+
+    </style>
 </head>
 <body>
-    <h1>Hello</h1>
-    <p>Some text </p>
-    <p>More text</p>
-    ca  marche <span> super </span>
+    <header>
+        Company logo, tag line, etc.
+        <nav>nagivation to portions of the doc</nav>
+
+        <ul>
+                <li>First <a href="http://www.bing.com/">bing</a></li>
+                <li>Second <a href="http://www.google.com/">google</a></li>
+                <li>Third <a href="http://www.nbcnews.com/">nbc news</a></li>
+            </ul>
+    </header>
+    <h1 id="top">Main and most important heading of the page</h1>
+    <section>
+        First section.
+        <article>Article 1</article>
+        <article>Article 2</article>
+        <article>Article 3</article>
+    </section>
+    <section>
+        Second section.
+        <article>Article 4</article>
+        <article>Article 5</article>
+        <article>Article 6</article>
+    </section>
+    <aside>
+        Information that relates to the main topic;
+        example: related posts.
+    </aside>
     <footer>
         <hr>
         <p
         style="text-align: center"
           onclick="alert('nope')"
         >Tech support: none</p>
+        &copy; Greg
+        &quot; install and run spellcheck&quot;
+        <a href="#top">Back to top</a>
     </footer>
+    <section>
+        <div>first</div>
+        <div>second</div>
+        <div>third</div>
+        <div>fourth</div>
+        <div>fifth</div>
+        <div>sixth</div>
+    </section>
 </body>
 </html>
